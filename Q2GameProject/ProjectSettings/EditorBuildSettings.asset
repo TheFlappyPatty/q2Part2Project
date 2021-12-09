@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ron/LevelSelect.unity
     guid: e1ee59a815cc44f48b0f269b9dad2f03
+  - enabled: 1
+    path: Assets/Scenes/Joseph/Scenes/Level 1.unity
+    guid: 1501230b618d40441ada8d6019fefbaf
   m_configObjects: {}
