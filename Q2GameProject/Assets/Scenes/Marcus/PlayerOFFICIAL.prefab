@@ -10,19 +10,19 @@ GameObject:
   m_Component:
   - component: {fileID: 3608449878973742591}
   - component: {fileID: 3608449878973742576}
+  - component: {fileID: 3608449878973742578}
+  - component: {fileID: 3608449878973742587}
+  - component: {fileID: 3608449878973742577}
   - component: {fileID: 3608449878973742589}
   - component: {fileID: 3608449878973742590}
-  - component: {fileID: 3608449878973742587}
-  - component: {fileID: 3608449878973742585}
   - component: {fileID: 3608449878973742586}
-  - component: {fileID: 3608449878973742578}
+  - component: {fileID: 3608449878973742585}
   - component: {fileID: 3608449878973742588}
-  - component: {fileID: 3608449878973742577}
   - component: {fileID: 3608449878973742342}
   - component: {fileID: 3608449878973742343}
   - component: {fileID: 3608449878973742584}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerOFFICIAL
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,6 +92,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &3608449878973742578
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3608449878973742579}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 2
+  m_Material: {fileID: 6200000, guid: a7d7c442822a24f4688830532edca642, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!95 &3608449878973742587
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3608449878973742579}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3608449878973742577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3608449878973742579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763b8327e8a55bd47b7e4ac77110e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 20
+  ye: {fileID: 3608449878973742585}
+  ye1: {fileID: 3608449878973742586}
+  ye2: {fileID: 3608449878973742588}
+  na: {fileID: 3608449878973742342}
+  na1: {fileID: 3608449878973742343}
+  na2: {fileID: 3608449878973742584}
+  rbye: {fileID: 3608449878973742578}
+  bbye: {fileID: 6200000, guid: d7514dbd7073a374fa62d80884cf545a, type: 2}
 --- !u!114 &3608449878973742589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,41 +180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedCap: 8
---- !u!95 &3608449878973742587
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3608449878973742579}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &3608449878973742585
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3608449878973742579}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.83865, y: -1.8484199}
-  m_Size: {x: 5.1197233, y: 7.232206}
-  m_Direction: 0
 --- !u!70 &3608449878973742586
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -170,27 +196,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.66014636, y: -1.8484584}
   m_Size: {x: 5.251829, y: 6.5721335}
   m_Direction: 0
---- !u!50 &3608449878973742578
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!70 &3608449878973742585
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3608449878973742579}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 2
-  m_Material: {fileID: 6200000, guid: a7d7c442822a24f4688830532edca642, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.83865, y: -1.8484199}
+  m_Size: {x: 5.1197233, y: 7.232206}
+  m_Direction: 0
 --- !u!70 &3608449878973742588
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -207,27 +228,6 @@ CapsuleCollider2D:
   m_Offset: {x: -4.8851185, y: 1.8484182}
   m_Size: {x: 6.04393, y: 6.04393}
   m_Direction: 0
---- !u!114 &3608449878973742577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3608449878973742579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763b8327e8a55bd47b7e4ac77110e8e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  accel: 20
-  ye: {fileID: 3608449878973742585}
-  ye1: {fileID: 3608449878973742586}
-  ye2: {fileID: 3608449878973742588}
-  na: {fileID: 3608449878973742342}
-  na1: {fileID: 3608449878973742343}
-  na2: {fileID: 3608449878973742584}
-  rbye: {fileID: 3608449878973742578}
-  bbye: {fileID: 6200000, guid: d7514dbd7073a374fa62d80884cf545a, type: 2}
 --- !u!70 &3608449878973742342
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
