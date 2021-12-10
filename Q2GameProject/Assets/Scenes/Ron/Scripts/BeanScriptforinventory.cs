@@ -7,6 +7,11 @@ public class BeanScriptforinventory : MonoBehaviour
 {
     public int BeanCount;
     public GameObject Bean;
+    public Text Beancountshower;
+    public void Update()
+    {
+        Beancountshower.text = ("" + BeanCount);
+    }
     public void addbean()
     {
         BeanCount++;
