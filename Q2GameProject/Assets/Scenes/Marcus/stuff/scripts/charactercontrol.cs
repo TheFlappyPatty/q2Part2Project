@@ -7,8 +7,6 @@ public class charactercontrol : MonoBehaviour
     public float accel = 8;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
-    public Animator characterworky;
-    public Animation walk;
     public CapsuleCollider2D ye;
     public CapsuleCollider2D ye1;
     public CapsuleCollider2D ye2;
