@@ -14,7 +14,7 @@ public class BeanScriptforinventory : MonoBehaviour
     }
     public void addbean()
     {
-        BeanCount++;
         Instantiate(Bean).transform.localPosition = gameObject.transform.position;
+        BeanCount += 1;
     }
 }

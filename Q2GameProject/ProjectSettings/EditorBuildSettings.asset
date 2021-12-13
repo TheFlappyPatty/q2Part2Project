@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Joseph/Scenes/Level 1.unity
     guid: 1501230b618d40441ada8d6019fefbaf
+  - enabled: 1
+    path: Assets/Scenes/Ron/CreditsScene.unity
+    guid: 5d6ff08a567c056479335258f4bc7c45
+  - enabled: 1
+    path: Assets/Scenes/Ron/Inventorytestingarea.unity
+    guid: f41a4327a47c9684b81eee45634a930d
   m_configObjects: {}
