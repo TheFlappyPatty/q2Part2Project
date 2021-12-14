@@ -42,7 +42,7 @@ public class Test124 : MonoBehaviour
             // do things
             if (GameObject.FindGameObjectWithTag("GodHand") == null)
             {
-                Instantiate(GodHand, new Vector3(playerLocation.position.x, 5, 0), Quaternion.identity);
+                Instantiate(GodHand, new Vector3(playerLocation.position.x, 11, 0), Quaternion.identity);
                 
             }
 

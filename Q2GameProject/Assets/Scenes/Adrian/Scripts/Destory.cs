@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Destory : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
-        {
+        if (collision.gameObject.tag == "Player")
             Destroy(collision.gameObject);
-        }
     }
 }

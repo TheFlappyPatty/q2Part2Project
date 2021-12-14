@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Human
   - Hightlimi
+  - GodHand
+  - GodHuman
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Car
   - Bean
   - inventorywall
-  - 
+  - Ground
   - 
   - 
   - 
