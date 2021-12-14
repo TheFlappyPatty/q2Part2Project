@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495745cc390380e4b8b227e8e0bb5feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level1: Inventorytestingarea
+  level1: Level 1
 --- !u!4 &26889958
 Transform:
   m_ObjectHideFlags: 0

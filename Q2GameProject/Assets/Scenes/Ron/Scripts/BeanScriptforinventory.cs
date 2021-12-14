@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BeanScriptforinventory : MonoBehaviour
 {
-    public int BeanCount;
+    public  static int BeanCount;
     public GameObject Bean;
     public Text Beancountshower;
     public void Update()
@@ -14,7 +14,7 @@ public class BeanScriptforinventory : MonoBehaviour
     }
     public void addbean()
     {
-        Instantiate(Bean).transform.localPosition = gameObject.transform.position;
+        Instantiate(Bean,transform.position,Quaternion.identity);
         BeanCount += 1;
     }
 }
