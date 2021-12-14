@@ -18,6 +18,10 @@ public class QuitScript : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
     }
+    public void creditsstuffmover()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
     public void Quitmenu()
     {
         Quitmenus.SetActive(true);

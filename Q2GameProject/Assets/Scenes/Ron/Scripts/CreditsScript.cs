@@ -49,9 +49,9 @@ public class CreditsScript : MonoBehaviour
 
         if(scroler < 1)
         {
-            scroler = 8;
+            scroler = 7;
         }
-        if(scroler > 8)
+        if(scroler > 7)
         {
             scroler = 1;
         }
@@ -112,21 +112,11 @@ public class CreditsScript : MonoBehaviour
             Marcus.SetActive(false);
             Adrian.SetActive(false);
             Joseph.SetActive(false);
-            Nev.SetActive(true);
-            kasi.SetActive(false);
-            may.SetActive(false);
-        }
-        if (scroler == 7)
-        {
-            Ron.SetActive(false);
-            Marcus.SetActive(false);
-            Adrian.SetActive(false);
-            Joseph.SetActive(false);
             Nev.SetActive(false);
             kasi.SetActive(true);
             may.SetActive(false);
         }
-        if (scroler == 8)
+        if (scroler == 7)
         {
             Ron.SetActive(false);
             Marcus.SetActive(false);
