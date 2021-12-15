@@ -10,6 +10,7 @@ public class OutOfBounds : MonoBehaviour
     public  void OnCollisionEnter2D(Collision2D collision)
     {
         collision.gameObject.transform.position = spawnpoint.transform.position;
+        Beaninventory.GetComponent<BeanScriptforinventory>().Deathtoraccon();
     }
 
 

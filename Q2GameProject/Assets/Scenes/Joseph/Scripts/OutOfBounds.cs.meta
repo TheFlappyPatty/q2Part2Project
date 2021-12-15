@@ -3,7 +3,10 @@ guid: 58420e355363b3740b905540ad67b1fd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spawnpoint: {instanceID: 0}
+  - Beaninventory: {fileID: 29178125117860911, guid: cf99f90d1871b444381c62aaf7b936c7,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
