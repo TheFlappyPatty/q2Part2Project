@@ -15,11 +15,13 @@ public class charactercontrol : MonoBehaviour
     public CapsuleCollider2D na2;
     public Rigidbody2D rbye;
     public PhysicsMaterial2D bbye;
+    Animator A;
 
     void Start()
     {
         rb2 = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        A = GameObject.GetComponet<Animator>();
     }
 
     private void FixedUpdate()
