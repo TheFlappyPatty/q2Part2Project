@@ -7,7 +7,7 @@ public class BeanPickupscripts : MonoBehaviour
     public GameObject inventorystuffwork;
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        inventorystuffwork.GetComponentInChildren<BeanScriptforinventory>().addbean();
+        inventorystuffwork.GetComponent<BeanScriptforinventory>().addbean();
         Destroy(gameObject);
     }
 }

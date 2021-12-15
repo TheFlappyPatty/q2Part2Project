@@ -7,6 +7,7 @@ public class BeanScriptforinventory : MonoBehaviour
 {
     public  static int BeanCount;
     public GameObject Bean;
+    public GameObject spawnpoint;
     public Text Beancountshower;
     public void Update()
     {
@@ -14,7 +15,7 @@ public class BeanScriptforinventory : MonoBehaviour
     }
     public void addbean()
     {
-        Instantiate(Bean,transform.position,Quaternion.identity);
+        Instantiate(Bean,spawnpoint.transform.position,Quaternion.identity);
         BeanCount += 1;
     }
 }
