@@ -10,4 +10,8 @@ public class BeanPickupscripts : MonoBehaviour
         inventorystuffwork.GetComponent<BeanScriptforinventory>().addbean();
         Destroy(gameObject);
     }
+    public void Playerhasdied()
+    {
+        Destroy(gameObject);
+    }
 }

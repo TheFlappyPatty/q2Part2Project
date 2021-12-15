@@ -13,9 +13,13 @@ public class BeanScriptforinventory : MonoBehaviour
     public void Update()
     {
         Beancountshower.text = ("" + BeanCount);
-        if(beansspawned >BeanCount)
+        if(BeanCount < beansspawned)
         {
             spawnone();
+        }
+        if(BeanCount > beansspawned)
+        {
+            beansspawned = BeanCount;
         }
     }
     public void addbean()
@@ -31,6 +35,6 @@ public class BeanScriptforinventory : MonoBehaviour
     {
         Debug.Log("recovering");
         Instantiate(Bean, spawnpoint.transform.position, Quaternion.identity);
-        beansspawned += 1;
+        BeanCount += 1;
     }
 }
