@@ -12,7 +12,7 @@ public class DestoryAfterTime : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1.25f);
             Destroy(gameObject);
             yield return false;
         }

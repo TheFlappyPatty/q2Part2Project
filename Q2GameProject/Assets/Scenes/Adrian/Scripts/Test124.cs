@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Test124 : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Test124 : MonoBehaviour
     //public GameObject locationMarker;
     public GameObject GodHand;
     public float WaitTime;
+    public 
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +37,7 @@ public class Test124 : MonoBehaviour
 
     private IEnumerator MyEvent()
     {
-        while (true)
+        while (GameObject.FindGameObjectWithTag("GodHuman") == true)
         {
             yield return new WaitForSeconds(WaitTime); // wait half a second
 
@@ -46,8 +48,10 @@ public class Test124 : MonoBehaviour
                 
             }
 
-
+            
 
         }
+        SceneManager.LoadScene("WIN");
+        StopCoroutine(MyEvent());
     }
 }
