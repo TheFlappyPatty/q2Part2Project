@@ -15,7 +15,7 @@ public class charactercontrol : MonoBehaviour
     public CapsuleCollider2D na2;
     public Rigidbody2D rbye;
     public PhysicsMaterial2D bbye;
-    Animator A;
+    public Animator A;
 
     void Start()
     {
