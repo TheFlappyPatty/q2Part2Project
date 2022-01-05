@@ -8,6 +8,7 @@ TagManager:
   - Hightlimi
   - GodHand
   - GodHuman
+  - can
   layers:
   - Default
   - TransparentFX
