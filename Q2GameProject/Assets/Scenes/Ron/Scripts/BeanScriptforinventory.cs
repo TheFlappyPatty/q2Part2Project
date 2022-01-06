@@ -10,17 +10,15 @@ public class BeanScriptforinventory : MonoBehaviour
     public GameObject Bean;
     public GameObject spawnpoint;
     public Text Beancountshower;
+
+
+    public void Start()
+    {
+        InvokeRepeating("spwnabean", 0,0.2f);
+    }
+
     public void Update()
     {
-        Beancountshower.text = ("" + BeanCount);
-        if(BeanCount < beansspawned)
-        {
-            spawnone();
-        }
-        if(BeanCount > beansspawned)
-        {
-            beansspawned = BeanCount;
-        }
     }
     public void addbean()
     {
@@ -36,5 +34,18 @@ public class BeanScriptforinventory : MonoBehaviour
         Debug.Log("recovering");
         Instantiate(Bean, spawnpoint.transform.position, Quaternion.identity);
         BeanCount += 1;
+    }
+
+    public void spwnabean()
+    {
+        Beancountshower.text = ("" + BeanCount);
+        if (BeanCount < beansspawned)
+        {
+            spawnone();
+        }
+        if (BeanCount > beansspawned)
+        {
+            beansspawned = BeanCount;
+        }
     }
 }
