@@ -25,7 +25,7 @@ public class BeanSpawn : MonoBehaviour
         {
             Destroy(Beancan1);
             StartCoroutine(can1());
-            SceneManager.LoadScene("WIN");
+            
         }
 
         if (collision.gameObject.name == "bean2")
@@ -91,7 +91,7 @@ public class BeanSpawn : MonoBehaviour
 
 
         Human.GetComponentInChildren<PolygonCollider2D>().enabled = false;
-
+        HumanParent.GetComponent<CircleCollider2D>().enabled = true;
         StopCoroutine(endGame());
 
         return null; 

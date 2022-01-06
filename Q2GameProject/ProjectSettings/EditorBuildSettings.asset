@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ron/Inventorytestingarea.unity
     guid: f41a4327a47c9684b81eee45634a930d
+  - enabled: 1
+    path: Assets/Scenes/Adrian/Scenes/Level 2.unity
+    guid: 01dbcd8cc245f9945ace83a839cd3eba
+  - enabled: 1
+    path: Assets/Scenes/Adrian/Scenes/WIN.unity
+    guid: a4d9414354f9a3b4583c5a73f5533844
   m_configObjects: {}
