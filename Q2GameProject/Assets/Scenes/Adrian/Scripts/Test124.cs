@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Test124 : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class Test124 : MonoBehaviour
     private Vector2 Currentlocation;
     //public GameObject locationMarker;
     public GameObject GodHand;
-    public float WaitTime;
+    public float Difficulty;
+    public 
     
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,10 @@ public class Test124 : MonoBehaviour
 
 
 
+    }
+    private void Update()
+    {
+        GetComponent<>
     }
 
 
@@ -35,19 +41,21 @@ public class Test124 : MonoBehaviour
 
     private IEnumerator MyEvent()
     {
-        while (true)
+        while (GameObject.FindGameObjectWithTag("GodHuman") == true)
         {
-            yield return new WaitForSeconds(WaitTime); // wait half a second
+            yield return new WaitForSeconds(Difficulty); // wait half a second
 
             // do things
-            if (GameObject.FindGameObjectWithTag("GodHand") == null)
+            if (GameObject.FindGameObjectWithTag("Player") == true || GameObject.FindGameObjectWithTag("GodHuman") == true)
             {
-                Instantiate(GodHand, new Vector3(playerLocation.position.x, 11, 0), Quaternion.identity);
+                Instantiate(GodHand, new Vector3(Random.Range(-1, 40) , 11, 0), Quaternion.identity);
                 
             }
 
-
+            
 
         }
+        SceneManager.LoadScene("WIN");
+        StopCoroutine(MyEvent());
     }
 }
