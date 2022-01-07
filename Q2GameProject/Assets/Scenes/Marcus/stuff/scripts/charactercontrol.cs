@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class charactercontrol : MonoBehaviour
 {
-    bool grounded = false;
+    bool Grounded = false;
     public float accel = 8;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
@@ -53,15 +53,9 @@ public class charactercontrol : MonoBehaviour
     }
     void Update()
     {
-        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
-         
-        if (grounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb2.velocity = new Vector2(rb2.velocity.x, 6);
-        }
-
         a.SetFloat("yVelocity", rb2.velocity.y);
-        a.SetBool("grounded", grounded);
+        a.SetBool("Grounded", Grounded);
+
         float horizValue =Input.GetAxis("Horizontal");
 
         if (horizValue == 0)
@@ -92,6 +86,13 @@ public class charactercontrol : MonoBehaviour
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
         {
             rbye.sharedMaterial = null;
+        }
+
+        Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
+
+        if (Grounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb2.velocity = new Vector2(rb2.velocity.x, 0);
         }
     }
 }
