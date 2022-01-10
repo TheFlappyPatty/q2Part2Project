@@ -10,10 +10,10 @@ public class charactercontrol : MonoBehaviour
     private SpriteRenderer sr;
     public CapsuleCollider2D ye;
     public CapsuleCollider2D ye1;
-    public CapsuleCollider2D ye2;
+   
     public CapsuleCollider2D na;
     public CapsuleCollider2D na1;
-    public CapsuleCollider2D na2;
+   
     public Rigidbody2D rbye;
     public PhysicsMaterial2D bbye;
     Animator a;
@@ -33,10 +33,10 @@ public class charactercontrol : MonoBehaviour
             rb2.AddForce(new Vector2(accel, 0));
             ye.enabled = false;
             ye1.enabled = false;
-            ye2.enabled = false;
+            
             na.enabled = true;
             na1.enabled = true;
-            na2.enabled = true;
+            
         }
 
         if (Input.GetAxis("Horizontal") < 0)
@@ -45,10 +45,10 @@ public class charactercontrol : MonoBehaviour
             rb2.AddForce(new Vector2(-accel, 0));
             ye.enabled = true;
             ye1.enabled = true;
-            ye2.enabled = true;
+            
             na.enabled = false;
             na1.enabled = false;
-            na2.enabled = false;
+            
         }
     }
     void Update()
