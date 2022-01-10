@@ -8,7 +8,7 @@ TagManager:
   - Hightlimi
   - GodHand
   - GodHuman
-  - can
+  - Inventoryclone
   layers:
   - Default
   - TransparentFX
@@ -20,11 +20,11 @@ TagManager:
   - 
   - Player
   - WallPass
-  - GodHuman
+  - Car
   - Bean
   - inventorywall
   - Ground
-  - can
+  - 
   - 
   - 
   - 
