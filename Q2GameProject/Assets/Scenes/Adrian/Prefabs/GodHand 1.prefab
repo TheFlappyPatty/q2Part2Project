@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6690133303261720032}
   - component: {fileID: 3853480260428447303}
   m_Layer: 10
-  m_Name: GodHand
+  m_Name: GodHand 1
   m_TagString: GodHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -1445351787
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 413f7760c11ae9d4a8001b9d18bb9edb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c41a7d80f891f24d91e051b30c98ae4, type: 3}
   m_Color: {r: 0.8207547, g: 0.6329144, b: 0.17421682, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.13, y: 4.61}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
