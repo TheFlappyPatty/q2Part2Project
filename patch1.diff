@@ -1,0 +1,53 @@
+From e4d67e528119eabfbc0cfd9b17dfc60748239ef3 Mon Sep 17 00:00:00 2001
+From: "MUKILTEO\\1709603" <garmanmt@gmail.com>
+Date: Fri, 14 Jan 2022 11:30:09 -0800
+Subject: [PATCH] YEE HAWW
+
+---
+ .../Assets/Scenes/Joseph/Scenes/Level 2.unity | 30 +++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+
+diff --git a/Q2GameProject/Assets/Scenes/Joseph/Scenes/Level 2.unity b/Q2GameProject/Assets/Scenes/Joseph/Scenes/Level 2.unity
+index 75d21e2..81e9758 100644
+--- a/Q2GameProject/Assets/Scenes/Joseph/Scenes/Level 2.unity	
++++ b/Q2GameProject/Assets/Scenes/Joseph/Scenes/Level 2.unity	
+@@ -31924,6 +31924,36 @@ Transform:
+   m_Father: {fileID: 889099188}
+   m_RootOrder: 28
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!1 &769693638
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 769693639}
++  m_Layer: 0
++  m_Name: yee haw
++  m_TagString: Untagged
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!4 &769693639
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 769693638}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 20.049488, y: 1.5103177, z: -1.7900399}
++  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_Children: []
++  m_Father: {fileID: 0}
++  m_RootOrder: 7
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+ --- !u!1 &770097914
+ GameObject:
+   m_ObjectHideFlags: 0
+-- 
+2.28.0.windows.1
+
